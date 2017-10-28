@@ -3,7 +3,6 @@ RUN apt-get update && \
     apt-get install -yq dnsmasq
 
 EXPOSE 53/tcp \
-       53/udp \
-       67/udp
+       53/udp
 
 ENTRYPOINT ["dnsmasq", "--no-daemon"]
